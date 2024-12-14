@@ -1,8 +1,18 @@
 public class Todo {
-    Integer id;
-    String judul;
-    String isiTodo;
-    String dateTime;
+    private Integer id;
+    private String judul;
+    private String isiTodo;
+    private String dateTime;
+
+    @Override
+    public String toString() {
+        return "{" +
+                "id=" + id +
+                ", judul='" + judul + '\'' +
+                ", isi" + isiTodo + '\'' +
+                ", dateTime='" + dateTime + '\'' +
+                '}';
+    }
 
     public Todo(Integer id, String judul, String isiTodo, String dateTime) {
         this.id = id;
