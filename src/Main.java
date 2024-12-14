@@ -20,7 +20,7 @@ public class Main {
                     System.out.println(updateTodo.getId());
                     service.update(updateTodo.getId(), updateTodo.getJudul(), updateTodo.getIsiTodo(), updateTodo.getDateTime());
                 } else if (input.equals(4)) {
-                    Integer id = view.delete(scanner);
+                    Integer id = view.delete(scanner,service);
                     service.delete(id);
                 }
             }

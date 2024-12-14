@@ -84,10 +84,16 @@ public class ViewCli{
         return todo;
     }
 
-    Integer delete(Scanner scanner){
+    Integer delete(Scanner scanner, ServiceTodo service){
         System.out.println("Masukan id todo yang ingin kamu hapus : ");
-        Integer id = inputToInt(scanner);
-        return id;
+        try{
+            Integer id = inputToInt(scanner);
+            return id;
+        }catch (Exception e){
+            System.out.println("input tidak valid");
+            return 0;
+        }
+
     }
 
     Integer inputToInt(Scanner scanner){

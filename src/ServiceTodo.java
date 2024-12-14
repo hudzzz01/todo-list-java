@@ -2,7 +2,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ServiceTodo implements CrudTodo {
-    List<Todo> todos = new ArrayList<>();
+    public List<Todo> getTodos() {
+        return todos;
+    }
+
+    public void setTodos(List<Todo> todos) {
+        this.todos = todos;
+    }
+
+    private List<Todo> todos = new ArrayList<>();
 
 
     @Override
@@ -67,6 +75,7 @@ public class ServiceTodo implements CrudTodo {
             cekIsIdContain(id);
         } catch (Exception e) {
             System.out.println(e.getMessage());
+            return null;
         }
 
         //getIndexFromId
