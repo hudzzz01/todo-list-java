@@ -22,5 +22,5 @@ ___
 
 # Lampiran : 
 
-![Screen Shoot](https://github.com/hudzzz01/todo-list-java/blob/main/cuplikan.png?raw=true)
+![Screen Shoot](https://github.com/hudzzz01/todo-list-java/blob/master/cuplikan.png?raw=true)
 
